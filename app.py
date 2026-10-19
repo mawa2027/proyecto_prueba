@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def inicio():
     # Este valor viene de una "variable de entorno" cargada en Coolify.
-    equipo = os.environ.get("NOMBRE_EQUIPO", "equipo sin nombre")
+    equipo = os.environ.get("NOMBRE_EQUIPO", "equipo1")
     return f"""<!doctype html>
 <html lang="es">
 <head>
